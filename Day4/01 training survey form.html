@@ -1,0 +1,178 @@
+<!-- training survey from-->
+<!doctype html>
+<html lang = "en">
+<head><title>TrainingSurveyForm</title>
+
+<style>
+/* Styling the body element i.e color, Font Alignment*/
+body{
+background-color : #05c46b;
+font-family: verdana;
+text-align : center;
+}
+
+/*Styling the form (color,padding,shadow)*/
+form{
+background-color:#fff;
+max-width:500px;
+margin : 50px auto;
+padding : 30px 20px;
+box-shadow : 2px 5px 10px rgba(0,0,0,0.5);
+}
+
+/*Styling form-control class*/
+.form-control{
+text-align:left;
+margin-bottom:25px;
+}
+/*Styling form control label*/
+.form-control label{
+display:block;
+margin-bottom:10px;
+}
+
+/*Styling form-control input,select,textarea*/
+.form-control input,
+.form-control select,
+.form-control textarea{
+border:1px solid #777;
+border-radius:2px;
+font-family : inherit;
+padding:10px;
+display:block;
+width:95%;
+}
+
+/*Styling form- control radio button checkbox*/
+.form-control input[type = "radio"],
+.form-control input[type="checkbox"]{
+display: inline-block;
+width:auto;
+}
+
+/*Styling Button*/
+button{
+background-color:#05c46b;
+border: 1px solid #777;
+border-radius : 2px;
+font-family:inherit;
+font-size : 21px;
+display :block;
+width :100%;
+margin-top:50px;
+margin-bottom:20px; 
+}
+
+</style>
+</head>
+<h1><font face = "times new roman">Training Survey form</font></h1>
+<body>
+<form>
+<!--Create Form-->
+<form id = "form">
+
+<!-details-->
+<div class = "form-control">
+<label for = "name" id = "label-name">Name </label>
+<!--input type text-->
+<input type = "Text"
+id ="name"
+placeholder = "Enter your name"/>
+</div>
+
+<div class = "form-control">
+<label for = "email" id = "label-email">Email</label>
+<!--input type Email-->
+<input type = "email"
+id = "email"
+placeholder = "enter your email"/>
+</div>
+<div  class = "form-control">
+<label for = "age">Age </label>
+<!--input type number-->
+<input type = "number"
+id = "number"
+placeholder = "enter your age"/>
+</div>
+
+<div class = "form-control">
+<label for = "role" id = "label-role">
+Which option best describes you ?
+</label>
+<!--DropDown Options-->
+<select name = "role">
+<option value = "Student">Student</option>
+<option value = "Intern">Intern</option>
+<option value = "Professional">Professional</option>
+<option value = "Other">Other</option>
+</select>
+</div>
+
+<div class = "form-control">
+<label>Would you Recomend MTCa to a friend ?</label><br/>
+<!--input type radio button-->
+<label for "recommend -1">
+<input type = "radio"    id ="recommend-1"
+name = "recommend">yes</input>
+</label>
+<label for "recommend -2">
+<input type = "radio"    id ="recommend-2"
+name = "recommend">No</input>
+</label>
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">other</input>
+</label>
+</div>
+
+<div class= "form-control">
+<label for = "Skills">
+Languages and frame works known <small>(check all that apply)</small>
+</label><br/>
+<!-- input type CHeckbox-->
+<label for ="inp-1">
+<input type ="checkbox" name = "inp">C </input></label>
+<label for ="inp-2">
+<input type ="checkbox" name = "inp">C++ </input></label>
+<label for ="inp-3">
+<input type ="checkbox" name = "inp">java </input></label>
+<label for ="inp-4">
+<input type ="checkbox" name = "inp">Python </input></label>
+<label for ="inp-5">
+<input type ="checkbox" name = "inp">JavaScript </input></label>
+<label for ="inp-6">
+<input type ="checkbox" name = "inp">C# </input></label>
+<label for ="inp-7">
+<input type ="checkbox" name = "inp">React </input></label>
+<label for ="inp-8">
+<input type ="checkbox" name = "inp">Angular </input></label>
+<label for ="inp-9">
+<input type ="checkbox" name = "inp">Djngo</input></label>
+<label for ="inp-10">
+<input type ="checkbox" name = "inp">HTML</input></label>
+<label for ="inp-11">
+<input type ="checkbox" name = "inp">CSS</input></label>
+</div>
+
+<div class = "form-control">
+<label for = "comment">
+Any Comments or Suggestions
+</label>
+<!--multi line text input control-->
+<textarea name = "comment" id = "comment"
+placeholder = "Enter your comments here .....">
+</textarea>
+</div>
+
+<!--button-->
+<button type = "submit" value ="submit"> 
+Submit
+</button>
+
+<button type = "reset" value ="reset"> 
+Reset
+</button>
+
+</form>
+</body>
+</html>
