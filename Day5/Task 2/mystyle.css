@@ -1,0 +1,32 @@
+.forUlUpperNav{
+list-style-type:none;
+margin:0;
+padding:0px;
+overflow:hidden;
+background-color:black;
+}
+
+.forliUpperNav{
+float:left;
+border-right:2px solid grey;
+}
+
+.forliAupperNav{
+float:right;
+border-left:2px solid grey;
+}
+
+
+li a{
+display:block;
+color:white;
+padding:14px 16px;
+text-align:center;
+text-decoration:none;
+
+}
+
+li:hover{
+background-color:red;
+}
+
