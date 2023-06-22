@@ -1,0 +1,36 @@
+<!-- Demo Form Using HTML knowledge-->
+<!doctype html>
+<html>
+<head><title>Application Form</title></head>
+<h1 align = "Center"><font >Application Form</font></h1>
+<h2 align = "center">Fill the following form carefully</h2>
+<body bgcolor = "teal">
+<form>
+<p>Personal Details</p>
+First Name : <input type = "text" name = "first_name"/>
+Middle Name : <input type = "text" name = "middle_name">
+Last Name : <input type = "text" name = "last_name">
+<br/><p></p>
+Father Name : <input type = "text" name = "father_name">
+Mother Name : <input type = "text" name = "mother_name">
+<br/><p></p>
+Date of Birth : <input type = "date" name = "date_of_birth">
+<br/><p></p>
+Gender :
+<input type = "radio" name = "type" value ="Male"/>Male
+<input type = "radio"  name = "type" value = "Female"/>Female
+<input type = "radio" name = "type" value = "other"/>Other
+<br/><p></p>
+Aadhar Number : <input type = "text" name = "aadhar_numer"> &nbsp 
+please upload aadhar image  <input type ="file" name = "fileupload"="image/*"/>
+<br/><p></p>
+please upload your image   <input type ="file" name = "fileupload"="image/*"/>
+<br/><p></p>
+Permanent Address: <textarea rows = "5" cols = "30">
+Enter your Address here </textarea>
+&nbsp
+Residential Address: <textarea rows = "5" cols = "30">
+Enter your Address here </textarea>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<script type = "text/javascript">
+/*if the time is below 9 you will get a "good morning greeting else you will get a good day greeting"*/
+var d = new Date();
+theDay = d.getDay();
+switch(theDay)
+{
+case 0: document.write("Sleepy Sunday"); break;
+case 1: document.write("Sleepy Monday"); break;
+case 2: document.write("Sleepy Tuesday"); break;
+case 3: document.write("Sleeping Wednesday"); break;
+case 4: document.write("Sunny Thursaday"); break;
+case 5: document.write("Finally Friday"); break;
+case 5: document.write("Super Saturady"); break;
+default: document.write("I'm looking forward to this weekend"); 
+}
+</script>
+
+</body>
+</html>
