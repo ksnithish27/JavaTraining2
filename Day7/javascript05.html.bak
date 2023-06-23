@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ </head>
+ <body>
+  <h2>Java script validation</h2>
+  <form action ="/action_page.php" method = "post">
+  <input type = "text" name ="fname" required>
+  <input type ="submit" value = "submit">
+  </form>
+
+  <p>if you click here without filling the form that displays errror message</p>
+ </body>
+</html>

@@ -1,0 +1,117 @@
+
+h2{
+text-align:center;
+}
+
+ul{
+list-style-type:none;
+margin:10%;
+margin-left:20px;
+margin-right:20px;
+padding:5px;
+overflow:hidden;
+background-color:white;
+}
+
+
+li{
+float:left;
+padding: 2px;
+}
+
+.lia{
+float : right;
+padding 2px;
+}
+
+li a{
+display:block;
+padding:10px 10px;
+text-align:center;
+}
+
+select{
+border:none;
+font-size:20px;
+}
+
+a{
+text-decoration:none;
+}
+
+/* Styling the body element i.e color, Font Alignment*/
+.bodys{
+padding: 50px 50px;
+background-color : White;
+font-family: verdana;
+text-align : center;
+}
+
+/*Styling form*/
+form{
+background-color:white;
+max-width:500px;
+margin:0px auto ;
+padding : 30px 20px;
+box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+}
+
+/*Styling form-control class*/
+.form-control{
+padding:25px;
+margin-bottom:5px;
+text-align:left;
+margin-top:25px;
+}
+
+/*Styling form-control class*/
+.formr-control{
+padding:5px;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+/*Styling form control label*/
+.form-control label{
+
+display:block;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+/*Styling form-control*/
+.form-control input{
+border:1px solid #777;
+border-radius:2px;
+font-family : inherit;
+padding:3px;
+display:block;
+width:95%;
+}
+
+.form-control input{
+border:1px solid #777;
+border-radius:2px;
+font-family : inherit;
+padding:15px;
+display:block;
+width:95%;
+float:right;
+}
+
+.form-control input[type = "button"]{
+border:2px solid #24a0ed;
+color:white;
+background-color:#24a0ed;
+border-radius:4px;
+font-family : inherit;
+padding:5px;
+display:block;
+width:18%;
+float:right;
+}
+
+
+input[type="button"]:hover{
+background-color:red;
+}
