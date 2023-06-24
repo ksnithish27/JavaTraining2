@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <style>
+ p{
+ background-image: url('monkeydluffy.png');
+ background-repeat: no-repeat;
+ }
+ </style>
+ </head>
+ <body>
+  <h2>Background Image</h2>
+  <p>You can specify the background images <br>
+  for any visible html element <br>
+  You can specify the background images <br>
+  for any visible html element <br>
+  You can specify the background images <br>
+  for any visible html element <br>
+  You can specify the background images <br>
+  for any visible html element <br>
+  <p>You can specify the background images <br>
+  for any visible html element <br>
+  You can specify the background images <br>
+r>
+  for any visible html element <br>
+  </p>
+
+ </body>
+</html>

@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="navigationbar.css">
+</head>
+
+<body>
+<div class = "navbar">
+<a href = "home.html">Home</a>
+<div class = "dropdown">
+<button class ="dropbtn">Frame</button>
+<div class= "dropdown-content">
+<a href = "horizontalframe.html">Horizontal</a>
+<a href = "verticalframe.html">Vertical</a>
+<a href = "mixedframe.html">Mixed</a>
+<a href = "customizedframe.html">Customized</a>
+</div></div>
+
+<div class = "dropdown">
+<button class ="dropbtn">Table</button>
+<div class= "dropdown-content">
+<a href = "simpletable.html">Simple</a>
+<a href = "complextable.html">Complex</a>
+<a href = "customizedtable.html">Customized</a>
+</div></div>
+
+<div class = "dropdown">
+<button class ="dropbtn">List</button>
+<div class= "dropdown-content">
+<a href = "ordered.html">Ordered List</a>
+<a href = "unordered.html">Unordered List</a>
+<a href = "definition.html">Definition List</a>
+</div></div>
+
+<div class = "dropdown">
+<button class ="dropbtn">CSS</button>
+<div class= "dropdown-content">
+<a href = "css1.html">CSS-1</a>
+<a href = "css2.html">CSS-2</a>
+<a href = "css3.html">CSS-3</a>
+</div></div>
+
+<div class= "login">
+<a href = "login.html">Login</a>
+</div>
+
+</div>
+</div>
+<h1>Home page</h1>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>This is section 1 from the Accordion. Here we are tring to modify the details from w3 school for under standing purpose</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>This is section 2 from the Accordion. Here we are tring to modify the details from w3 school for under standing purpose.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>This is section 3 from the Accordion. Here we are tring to modify the details from w3 school for under standing purpose.</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="download.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="download1.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="download2.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</body>
+
+
+
+</html>
