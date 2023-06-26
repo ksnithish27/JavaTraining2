@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <!--Tittle-->
+  <title>Document</title>
+  <link rel = "stylesheet" href = "css/mystyle.css">
+ </head>
+
+ <body>
+  <CENTER><h2>Student Detials</h2></CENTER>
+ <!--Table-->
+<table>
+<!--Row-1-->
+<tr>
+<!--Coloumn-1-->
+<td>
+<!--form-->
+<Form id = "myForm" onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off">
+
+<h3>Student Details</h3>
+
+
+<!--div-1-->
+<div>
+<label>Id</label>
+<!--Validation Error-->
+<label class="validation-error hide" id="idvalidationError">This field is required</label>
+
+<!--Input Full Name-->
+<input type="text" name="txtId" id="txtId" placeholder="Enter the Id">
+</div>
+
+
+<!--div-2-->
+<div>
+<label>Name</label>
+<!--Validation Error-->
+<label class="validation-error hide" id="namevalidationError">This field  is required</label>
+</div>
+<!--Input Roll No-->
+<input type="text" name="txName" id="txName" placeholder="Enter the Name">
+</div>
+
+<!--div-3-->
+<div>
+<label>Course</label>
+<!--Validation Error-->
+<label class="validation-error hide" id="coursevalidationError">This field  is required</label>
+</div>
+<!--Input Student Class-->
+<input type="text" name="txtCourse" id="txtCourse" placeholder="Enter the Student Course">
+</div>
+
+<!--div-4-->
+<div>
+<label>Aadhar Number</label>
+<!--Validation Error-->
+<label class="validation-error hide" id="aadharvalidationError">This field  is required</label>
+</div>
+<!--Input Total Subject-->
+<input type="text" name="txtAadhar" id="txtAadhar" placeholder="Enter the Aadhar number">
+</div>
+
+<!--div5-->
+<div class="form-action-buttons">
+<!--Input Button-->
+<input type="submit" value="Add">
+</div>
+
+<!--div6-->
+<div class="form-action-buttons">
+<!--Input Button-->
+<input type="button" onclick="myFormReset() " value="Clear">
+</div>
+
+<!--div7
+<div class="form-action-buttons">
+<!--Input Button
+<input type="button" value="Exit">
+</div>
+-->
+
+</form>
+</td>
+<!--coloumn-2-->
+<td>
+<!--Nested Table-->
+<table class="list" id="stdlist"style="background-color:#C2976D;">
+<!--Table Head-->
+<thead>
+<!--Row-2-->
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Course</th>
+<th>Aadhar Number</th>
+<th>Action</th>
+</tr>
+</thead>
+<!--Table Body-->
+<tbody>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!--JS File-->
+<script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>CRUD-JS</title>
+  <!--css-->
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+
+<Center><h1>Student Record</h1></center>
+
+<!---Table-->
+  <table>
+  <!--Row 1-->
+  <tr>
+  <!--Col 1-->
+  <td>
+  <!--Form-->
+  <form onsubmit = "event.preventDefault(); onFormSubmit(); "autocomplete="off">
+
+  <h3>Student Form</h3>
+  <!--Division for Label Id-->
+
+
+  <div>
+
+  <label>Full Name </label>
+  <!--Validation Errors-->
+  <Label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+  <!--input name-->
+  <input type="text" name = "username" id = "username" placeholder="Enter the user name">
+
+  </div>
+
+  <!--div2-->
+  <div>
+  <label>Roll Number</label>
+   <Label class="validation-error hide" id="rollNovalidationError">This field is required</label>
+   <!--input roll number-->
+   <input type="text" name = "rollNo" id = "rollNo" placeholder="Enter the Roll Number">
+  </div>
+
+  <!--div3-->
+  <div>
+  <label>Student Class</label>
+   <Label class="validation-error hide" id="stdClassvalidationError">This field is required</label>
+   <!--input student class-->
+   <input type="text" name = "stdClass" id = "stdClass" placeholder="Enter the student class">
+  </div>
+
+  <!--div4-->
+  <div>
+  <label>Total Subject</label>
+   <Label class="validation-error hide" id="subvalidationError">This field is required</label>
+   <!--input total subjects-->
+   <input type="number" name = "tsub" id = "tsub" placeholder="Enter the total subjects">
+  </div>
+
+   <!--div5-->
+  <div>
+  <label>Age</label>
+   <Label class="validation-error hide" id="agevalidationError">This field is required</label>
+   <!--input age-->
+   <input type="number" name = "age" id = "age" placeholder="Enter the Age">
+  </div>
+
+   <!--div6-->
+  <div class="form-action-button">
+   <!--input type buttons-->
+   <input type="submit" value="Submit">
+  </div>
+
+  </form>
+  </td>
+  <!--Column 2-->
+
+  <td>
+  <!--nested table-->
+
+  <table class ="list" id="stdlist" style="background-color:#C2976D">
+  <!--table head-->
+
+  <thead>
+  <!--row 2-->
+
+  <tr>
+      <th>Full Name</th>
+      <th>Roll no</th>
+      <th>Class</th>
+      <th>Total Subjects</th>
+      <th>Age</th>
+      <th>Action</th>
+  </tr>
+
+  </thead>
+
+  <!--table body-->
+  <tbody>
+  </tbody>
+  </table>
+  </td>
+  </tr>
+  </table>
+
+  <!--Java Script File-->
+  <script src="script.js"></script>
+ </body>
+</html>

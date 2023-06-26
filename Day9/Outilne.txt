@@ -1,0 +1,13 @@
+Form : frmAddStudent
+Name: labelAddStudent text: Add Student Record
+
+Fields :
+ID: labelID		txtID
+Name: labelName		txtName
+Course: lableCourse		txtCourse
+Aadharno: labelAadharno:	txtAadharNo
+
+
+Button : btnAddRecord	txt:Add
+Button : btnClear		txt:Clear
+Button: BtnExit		txtExit
