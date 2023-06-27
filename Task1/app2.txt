@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css1.css">
+</head>
+<body>
+  <div class="container">
+
+    <img src="Logo1.jpg" class="top-left-image" alt="Image 1">
+    <img src="Logo2.jpg" class="top-right-image" alt="Image 2">
+<div class="h1">
+      <h1 align="center" color="red"> MOTHER THERESA INSTITUTE OF COMPUTER APPLICATIONS   </h1>
+</div>
+      <h3 align="center"> (Affiliated by AICTE, Affiliated to S. V. University, Tirupati)
+         <br>
+         Melumoi(Post), <b> PALAMANER - 517408</b>, Chittoor Dist., A.P.
+         <br>
+         <a href="www.mtimca.edu.in">www.mtimca.edu.in </a>,Email : 
+         <a href="mailto:mtimca@gmail.com">mtimca@gmail.com</a>
+         <br>
+         PHONE : <a href="tel:08579-268575">08579-268575</a>
+      </h3>
+     <div class="h2">
+      <h2 align="center">
+         APPLICATION FORM
+      </h2>
+     </div>
+
+<table border="1" class="table1">
+<tr>
+<td>
+<h4>Collge Roll No.(Office Use only):</h4>
+</td>
+
+<td>
+<input type="text" name ="rollnumber"> &nbsp&nbsp<font color = "red">&nbsp<u>ICET CODE : <b>MTCA</b></u></font>
+</td>
+
+<td rowspan = 3></td><td colspan = 3></Td>
+
+
+</tr>
+
+<tr>
+
+<td>
+<h4>1.NAME OF THE CANDIDATE </h4>
+</td>
+
+<td>
+_________________________________________
+</td>
+
+
+
+</tr>
+
+<tr>
+
+<td>
+<h4>(Capitals as per SSC.)</h4>
+</td>
+
+<td>
+<input type="text" name ="name">
+</td>
+
+
+
+</tr>
+
+
+<tr>
+
+<td>
+<h4>2.Gender </h4>
+</td>
+
+<td>
+:<input type="radio" id="male" name="gender" value="Male"> Male
+<input type="radio" id="female" name="gender" value="Female"> Female
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+<h4>3.Aadhar Number </h4>
+</td>
+
+<td>
+:<input type="text" name = "AadharNumber">
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>4. Name of the mother </h4>
+</td>
+
+<td>
+:<input type="text" name = "Mother name">
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>5.Aadhar Number </h4>
+</td>
+
+<td>
+:<input type="text" name = "AadharNumber">
+</td>
+
+</tr>
+
+<td>
+<h4>6. Name of the Father </h4>
+</td>
+
+<td>
+:<input type="text" name = "Father name">
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>7.Aadhar Number </h4>
+</td>
+
+<td>
+:<input type="text" name = "AadharNumber">
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>8. Occupation and Annual Income </h4>
+</td>
+
+<td>
+:<input type="text" name = "income">
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+<h4>of the parent </h4>
+</td>
+
+<td>
+:<input type="text" name = "income">
+</td>
+<td>
+:<input type="text" name = "income">
+</td>
+</tr>
+
+<div>
+<tr>
+
+<td>
+<h4>9. Date of Birth  DD/MM/YYYY </h4>
+</td>
+
+<td>
+:<input type="date" name = "date">
+</td>
+
+</tr>
+</div>
+
+<tr>
+<td>
+<h4>10. Blood group </h4>
+</td>
+<td>
+:<input type="text" name = "BloodGroup">
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>11. Nationality & Religion </h4>
+</td>
+<td>
+:<input type="text" name = "nandr">
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>12. Categeory of Reservation </h4>
+</td>
+<td>
+:<input type="radio" id="oc" name="caste"> OC
+<input type="radio" id="sc" name="caste"> SC
+<input type="radio" id="st" name="caste"> ST
+<input type="radio" id="bc-a" name="caste"> BC-A
+<input type="radio" id="bc-b" name="caste"> BC-B
+<input type="radio" id="bc-c" name="caste"> BC-C
+<input type="radio" id="bc-d" name="caste"> BC-D
+<input type="radio" id="bc-d" name="caste"> BC-E
+</td>
+
+<td>
+<h4>Caste</h4>
+</td>
+
+<td>
+:<input type="text" name = "caste">
+</td>
+</tr>
+</tr>
+
+
+<tr>
+<td>
+<h4>13.Address for communication </h4>
+</td>
+<td>
+<textarea id="address" name="address" rows="5" cols="50" placeholder="Enter your address here...."></textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>14.Telephone no.</h4>
+</td>
+<td>
+std:<input type="text" name = "std">  Phone: <input type="text" name = "std">
+</td>
+</tr>
+<tr>
+<td>
+<h4>15.Mobile no.</h4>
+</td>
+<td>
+Mobile1:<input type="text" name = "m1">  Mobile2: <input type="text" name = "m2">
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>16.Email Id</h4>
+</td>
+<td>
+:<input type="email" name = "emailid" required>
+</td>
+</tr>
+
+</table>
+
+<h4>Educational Qualifications:</h4>
+ <table border=1>
+ <tr>
+ <td rowspan = 2>Course</td><td rowspan = 2>Board/University</td>
+<td rowspan = 2>Group</td> <td rowspan = 2>medium</td>
+<td colspan = 3>marks</Td><td rowspan = 2>Class/Grade</td>
+<td rowspan = 2>month & Year of passing</td>
+ </tr>
+ <tr>
+ <td>total</td><td>secured</td><td>Percentage</td>
+ </tr>
+ <tr>
+ <td>SSC</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+ </tr>
+  <tr>
+ <td>Intermediate</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+ </tr>
+ <tr>
+ <td>Graduation</td>
+
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+
+ </tr>
+
+ </table>
+     </div>
+</body>
+</html>
