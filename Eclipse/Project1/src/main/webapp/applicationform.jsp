@@ -1,0 +1,480 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="CSS/navigationbar.css">
+<link rel="stylesheet" type="text/css" href="CSS/application.css">
+<title>Application Form</title>
+</head>
+<body>
+
+<div class = "navbar">
+ <a href = "home.jsp">Home</a>
+
+ 
+
+<a href = "home.jsp">About us</a>
+
+<a href = "home.jsp">Contact Us</a>
+
+
+<div class= "login">
+<a href = "applicationform.jsp">Apply</a>
+<a href = "login.jsp">Login</a>
+</div>
+</div>
+
+  <div class="container">
+
+    <img src="IMG/Logo1.jpg" class="top-left-image" alt="Image 1">
+    <img src="IMG/Logo2.jpg" class="top-right-image" alt="Image 2">
+
+    <div class="img3">
+<label class="label1" for="file">Choose Image</label>
+<input type="file" id="file" onchange="loadImage(event)">
+
+<img id="output"/>
+</div>
+
+<div class="h1">
+      <h2 align="center" color="red"> MOTHER THERESA INSTITUTE OF COMPUTER APPLICATIONS   </h2>
+</div>
+      <h3 align="center"> (Affiliated by AICTE, Affiliated to S. V. University, Tirupati)
+         <br>
+         Melumoi(Post), <b> PALAMANER - 517408</b>, Chittoor Dist., A.P.
+         <br>
+         <a href="www.mtimca.edu.in">www.mtimca.edu.in </a>,Email : 
+         <a href="mailto:mtimca@gmail.com">mtimca@gmail.com</a>
+         <br>
+         PHONE : <a href="tel:08579-268575">08579-268575</a>
+      </h3>
+     <div class="h2">
+      <h2 align="center">
+         APPLICATION FORM
+      </h2>
+     </div>
+
+<table  class="table2">
+<tr>
+<td>
+<h4>Collge Roll No:<br>(Office Use only):</h4>
+</td>
+
+<div>
+<td>
+<input   style="font-size: 20px;
+ background:lightblue;
+  width: 30%;
+  padding: 10px;
+  display:block;
+  background-color:lightblue;
+  width: 35%;
+  padding: 12px 20px;
+  border:2px solid black;" type="text" name ="rollnumber"> 
+  
+  <div class="top-left-text"><h3><font color = "red">&nbsp<b><u>ICET CODE : MTCA</b></u></font></h3></div>
+  </td>
+
+  </div>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>1.NAME OF THE CANDIDATE :<br>(Capitals as per SSC.) </h4>
+</td>
+
+<div class="t">
+<td>
+<input style="text-transform: uppercase;" type="text" name="name"><br>
+
+</td>
+</div>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>2.Gender </h4>
+</td>
+
+<td>
+:<input type="Radio" id="male" name="Gender" value="Male"> Male
+<input type="Radio" id="Female" name="Gender" value="Female"> Female
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+<h4>3.Aadhar Number: </h4>
+</td>
+
+<td>
+<input onkeypress='return event.charCode >= 48 && event.charCode <= 57'  maxlength="12" type="text" name="AadharNumber" ></input>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>4. Name of the mother :</h4>
+</td>
+
+<td>
+<input type="text" name="mothername">
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>5.Aadhar Number: </h4>
+</td>
+
+<td>
+<input onkeypress='return event.charCode >= 48 && event.charCode <= 57'  maxlength="12" type="text" name="AadharNumber">
+<td>
+</tr>
+
+<td>
+<h4>6. Name of the Father: </h4>
+</td>
+
+<td>
+<input type="text" name="Fname">
+</td>
+</tr>
+
+<tr>
+
+<td>
+<h4>7.Aadhar Number: </h4>
+</td>
+
+<td>
+<input type="text"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'  maxlength="12" name="AadharNumber">
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>8. Occupation and Annual Income <br>of the parent(in LPA)</h4>
+</td>
+
+<td>
+&nbsp<input type="text" name="income">
+</td>
+
+</tr>
+
+
+
+<div>
+<tr>
+
+<td>
+<h4>9. Date of Birth  DD/MM/YYYY </h4>
+</td>
+
+<td>
+<input type="date">
+</td>
+
+</tr>
+</div>
+
+<tr>
+<td>
+<h4>10. Blood group </h4>
+</td>
+<td>
+<!--DropDown  A+, A-, B+, B-, O+, O-, AB+, AB- Options-->
+<select name = "role">
+<option value = "A+">A+</option>
+<option value = "A-">A-</option>
+<option value = "B+">B+</option>
+<option value = "B-">B-</option>
+<option value = "O+">O+</option>
+<option value = "O-">O-</option>
+<option value = "AB+">AB+</option>
+<option value = "AB-">AB-</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>11. Nationality & Religion: </h4>
+</td>
+<td>
+<input type="text" name="religion">
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>12. Categeory of Reservation </h4>
+</td>
+<td>
+<!--DropDown  OC, SC, ST, BC-A, BC-B, BC-C, BC-D, BC-E Options-->
+<select name = "role">
+<option value = "OC">OC</option>
+<option value = "SC">SC</option>
+<option value = " ST"> ST</option>
+<option value = "BC-A">BC-A</option>
+<option value = "BC-B">BC-B</option>
+<option value = " BC-C"> BC-C</option>
+<option value = "BC-D">BC-D</option>
+<option value = "BC-E">BC-E</option>
+</select>
+</td>
+
+<td>
+<h4>&nbspCaste:</h4>
+</td>
+
+<td>
+<input type="text" name="name">
+</td>
+</tr>
+</tr>
+
+
+<tr>
+<td>
+<h4>13.Address for communication </h4>
+</td>
+<td>
+<div class="textarea1">
+<textarea placeholder="Enter your present address in here ....... " rows="6"
+ cols="50"></textarea>
+ </div>
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>14.Telephone no.</h4>
+</td>
+
+<td>
+<div>
+STD:
+<input   style="font-size: 16px;
+border-right:none;
+border-left:none;
+border-top:none;
+border-bottom:2px solid black;
+ background:lightblue;
+  width: 30%;
+  padding: 10px;
+  display:block;" type="text" name ="std"> 
+  </div>
+</td>
+
+
+<td>
+Phone:<input style="font-size: 16px;
+border-right:none;
+border-left:none;
+border-top:none;
+border-bottom:2px solid black;
+ background:lightblue;
+  width: 50%;
+  padding: 10px;
+  display:block;" type="text" name ="phone"> 
+</td>
+
+</tr>
+<tr>
+<td>
+<h4>15.Mobile no.</h4>
+</td>
+<td>
+<div>
+Mobile 1:
+<input   style="font-size: 16px;
+border-right:none;
+border-left:none;
+border-top:none;
+border-bottom:2px solid black;
+ background:lightblue;
+  width: 30%;
+  padding: 10px;
+  display:block;" type="text" name ="std"> 
+  </div>
+</td>
+
+
+<td>
+Mobile 2:<input style="font-size: 16px;
+border-right:none;
+border-left:none;
+border-top:none;
+border-bottom:2px solid black;
+ background:lightblue;
+  width: 50%;
+  padding: 10px;
+  display:block;" type="text" name ="phone"> 
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>16.Email Id</h4>
+</td>
+<td>
+&nbsp<input type="text" name="name">
+</td>
+</tr>
+
+</table>
+
+<h4 align="left">Educational Qualifications:</h4>
+ <table border=1 class="table1" align = "center">
+ <tr>
+ <td rowspan = 2><b>Course</b></td><td rowspan = 2><b>Board/University</b></td>
+<td rowspan = 2><b>Group</b></td> <td rowspan = 2><b>medium</b></td>
+<td colspan = 3><b>marks</b></Td><td rowspan = 2><b>Class/Grade</b></td>
+<td rowspan = 2><b>month & Year of passing</b></td>
+ </tr>
+ <tr>
+ <td><b>Total</b></td><td><b>Secured</b></td><td><b>Percentage</b></td>
+ </tr>
+ <tr>
+ <td><b>SSC</b></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+ </tr>
+  <tr>
+ <td><b>Intermediate</b></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+ </tr>
+ <tr>
+ <td><b>Graduation</b></td>
+
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+<td><input style = " background-color:lightblue;
+  width: 50%;
+  padding: 10px 20px;
+  border:none;" type="text" name ="rollnumber"></td>
+
+ </tr>
+
+ </table>
+     </div>
+
+<script type="text/javascript">
+	function loadImage(event) {
+	var output = document.getElementById('output');
+	output.src = URL.createObjectURL(event.target.files[0]);
+	output.onload = function() {
+	URL.revokeObjectURL(output.src)
+}
+}
+</script>
+
+</body>
+</html>
