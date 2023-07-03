@@ -1,0 +1,47 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+		input[type="file"] {
+			display: none;
+		}
+		label {
+		position: absolute;
+		  top: 55%;
+		  right: 15%;
+			background-color: lightblue;
+			color: white;
+			padding: 5px 5px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		img {
+position: absolute;
+ top: 30%;
+width: 175px;
+height:175px;
+  right: 10%;
+		}
+	</style>
+</head>
+<body>
+<div>
+<label for="file">Choose Image</label>
+<input type="file" id="file" onchange="loadImage(event)">
+</div>
+<img id="output"/>
+<script type="text/javascript">
+	function loadImage(event) {
+	var output = document.getElementById('output');
+	output.src = URL.createObjectURL(event.target.files[0]);
+	output.onload = function() {
+	URL.revokeObjectURL(output.src)
+}
+}
+</script>
+</body>
+</html>
